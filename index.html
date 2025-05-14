@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Flex & Grid Layout Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">MyBrand</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Our Site</h1>
+      <p>Building responsive layouts with Flexbox, Grid, and media queries.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">  
+        <h2>Feature One</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <h2>Feature Two</h2>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+      <div class="feature">
+        <h2>Feature Three</h2>
+        <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
+      </div>
+      <div class="feature">
+        <h2>Feature Four</h2>
+        <p>Cras mattis consectetur purus sit amet fermentum.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 MyBrand. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
